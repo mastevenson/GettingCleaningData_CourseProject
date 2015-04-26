@@ -25,7 +25,7 @@ Note the code is thoroughly commented. The below outlines (at a high level) step
 
 4- Next, per requisite 3 in the assignment, the activity value which is currently numeric is renamed to text descriptions per the 'activity_labels.txt'. The columns are realigned to ensure readability.
 
-5- Next, per requisite 2 in the assignment, only the  measurements on the mean and standard deviation for each measurement are extracted. This was interpretted to mean only fields containing the mean() and std() text were selected. These columns were subsetted into a new data frame which resulted in 81 total columns.
+5- Next, per requisite 2 in the assignment, only the  measurements on the mean and standard deviation for each measurement are extracted. This was interpretted to mean only fields containing the mean() (including freqmean()) and std() text were selected. These columns were subsetted into a new data frame which resulted in 81 total columns.
 
 6- Next, per requisite 4 in the assignment, the labels/columns names in the data set were appropriately labled through regular expressions with descriptive variable names. The descriptive variable names were derived from guidance provided in the features_info.txt file. Per Week 4, lecture 1 names of variables should be:
 
