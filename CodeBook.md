@@ -7,8 +7,8 @@ output: html_document
 
 **Purpose:**
 
-- Provide definitions of variables from output of 'run_Analysis.R' script entitled 'tidy_data_set.txt'
-- Note there are four variables. The fourth variable is at the bottom of the page below the third variable explanations.
+- Provide definitions of columns/variables from output of 'run_Analysis.R' script entitled 'tidy_data_set.txt'
+- __*Note there are four columns. The fourth column is at the bottom of the page below the third column variable/value explanations.*__
 
 __*Definitions*__
 
@@ -22,7 +22,17 @@ __*Definitions*__
         
 3- variable
 
-        The variable measured. There are 79 permissible observations in this field as the data set is tall form (as opposed to wide). The following are the definitions for each:
+        The variable measured. There are 79 permissible observations in this field as the data set is long form (as opposed to wide). 
+        
+        Note the Time domain signals were captured at a constant rate of 50 Hz, were subsequently filtered using a median filter and a 3rd order low pass Butterworth filter with a corner frequency of 20 Hz to remove noise. Similarly, the Acceleration signal was then separated into Body and Gravity Acceleration signals using another low pass Butterworth filter with a corner frequency of 0.3 Hz. 
+        
+        Subsequently, the Body linear acceleration and angular Velocity were derived in time to obtain Jerk signals. Also the magnitude of these three-dimensional signals were calculated using the Euclidean norm denoted by Magnitude. 
+
+        Fast Fourier Transform (FFT) was applied to some signals which are denoted by Frequency.
+        
+        Note the features are normalized and bounded by [-1,1].
+        
+        The following are the definitions for each:
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**time_body_acceleration_mean_x_dimension**: Time domain signal from accelerometer measuring mean of body movement in x dimension
 
@@ -185,4 +195,4 @@ __*Definitions*__
 
 4- mean
 
-        The mean measurement of the associated variable normalized from -1 to 1.
+        The mean measurement of the associated variable.
